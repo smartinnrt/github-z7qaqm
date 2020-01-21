@@ -1,0 +1,79 @@
+p {
+  font-size:1.2rem;
+  line-height:1.6rem;
+}
+
+a, a:visited {
+  color: #1f69ff;
+  text-decoration:none;
+}
+
+// 300, 400, 500, 700 //
+
+.mat-display-4 {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+.mat-display-3 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.mat-display-2 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.mat-h1, .mat-headline {
+  font-size: 2.125rem;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+.mat-h2, .mat-subheading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.mat-h3, .mat-subheading-2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+.mat-body, .mat-body-1 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height:1.6rem;
+}
+.mat-body-2 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+.mat-h4, .mat-subheading-3 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+.mat-h5, .mat-subheading-4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+.mat-small, .mat-caption {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.mat-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+.overline {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

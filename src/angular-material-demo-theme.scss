@@ -1,0 +1,93 @@
+@import '~@angular/material/theming';
+@import 'typography.scss';
+
+@include mat-core();
+
+$cb-palette: (
+    50 : #e4edff,
+    100 : #bcd2ff,
+    200 : #8fb4ff,
+    300 : #6296ff,
+    400 : #4180ff,
+    500 : #1f69ff,
+    600 : #1b61ff,
+    700 : #1756ff,
+    800 : #124cff,
+    900 : #0a3bff,
+    A100 : #ffffff,
+    A200 : #f5f6ff,
+    A400 : #c2ccff,
+    A700 : #a8b6ff,
+    contrast: (
+        50 : #14171a,
+        100 : #14171a,
+        200 : #14171a,
+        300 : #14171a,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #14171a,
+        A200 : #14171a,
+        A400 : #14171a,
+        A700 : #14171a,
+    )
+);
+
+$cb-warning: (
+    50 : #fbe7e6,
+    100 : #f5c2bf,
+    200 : #ef9a95,
+    300 : #e8716b,
+    400 : #e3524b,
+    500 : #de342b,
+    600 : #da2f26,
+    700 : #d52720,
+    800 : #d1211a,
+    900 : #c81510,
+    A100 : #fff7f6,
+    A200 : #ffc4c3,
+    A400 : #ff9290,
+    A700 : #ff7977,
+    contrast: (
+        50 : #14171a,
+        100 : #14171a,
+        200 : #14171a,
+        300 : #14171a,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #14171a,
+        A200 : #14171a,
+        A400 : #14171a,
+        A700 : #14171a,
+    )
+);
+
+
+
+$primary: mat-palette($cb-palette);
+$accent:  mat-palette($cb-palette, 300);
+$warn:    mat-palette($cb-warning, 500);
+
+$information-color: #f4b124;
+$favorite-color: #e96084;
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+
+.m2app-dark {
+  $primary: mat-palette($mat-pink, 700, 500, 900);
+  $accent:  mat-palette($mat-blue-grey, A200, A100, A400);
+  $warn:    mat-palette($mat-red, A700);
+
+  $theme:   mat-dark-theme($primary, $accent, $warn);
+
+  @include angular-material-theme($theme);
+}
