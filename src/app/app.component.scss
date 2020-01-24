@@ -1,3 +1,5 @@
+@import '../realogy-theme.scss';
+
 mat-sidenav-container.dark-mode {
   background: black;
 }
@@ -109,6 +111,7 @@ mat-chip {
 .example-spacer {
   flex: 1 1 auto;
 }
+
 
 .mat-stroked-button {
   color:#1f69ff;
