@@ -73,6 +73,10 @@ $primary: mat-palette($cb-palette);
 $accent:  mat-palette($cb-palette, 300);
 $warn:    mat-palette($cb-warning, 500);
 
+a, a.visited {
+  color:mat-color($primary, 500);
+}
+
 $information-color: #f4b124;
 $favorite-color: #e96084;
 
