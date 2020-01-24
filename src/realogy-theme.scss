@@ -69,8 +69,6 @@ $cb-warning: (
     )
 );
 
-
-
 $primary: mat-palette($cb-palette);
 $accent:  mat-palette($cb-palette, 300);
 $warn:    mat-palette($cb-warning, 500);
