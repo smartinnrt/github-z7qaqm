@@ -118,6 +118,10 @@ mat-chip {
   border-color:mat-color($primary, 500)!important;
 }
 
+.mat-raised-button.mat-primary:hover {
+box-shadow: inset 36px 36px mat-color($primary, 700);
+}
+
 button {
   margin-right:8px;
 }
