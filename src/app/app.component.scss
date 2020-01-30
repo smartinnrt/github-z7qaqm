@@ -115,7 +115,7 @@ mat-chip {
 
 .mat-stroked-button {
   color:mat-color($primary, 500);
-  border-color:mat-color($primary, 500);
+  border-color:mat-color($primary, 500)!important;
 }
 
 button {
