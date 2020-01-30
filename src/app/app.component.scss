@@ -143,13 +143,13 @@ p.mat-line.secondary-text {
 }
 
 .mat-icon.information {
-color: #f4b124;
+color: $information-color;
 }
 .mat-icon.warn{
 color: #de342b;
 }
 .mat-icon.fav {
-  color: #e96084;
+  color: $favorite-color;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-prefix, .mat-form-field-appearance-outline .mat-form-field-suffix {
