@@ -99,7 +99,7 @@ export class AppComponent {
     </div>
     <div matDialogActions>
       <button mat-button color="primary" [matDialogClose]="dialogInput.value">Cancel</button>
-      <button mat-raised-button color="primary"[matDialogClose]="dialogInput.value">Call to action</button>
+      <button class="app-button" mat-raised-button color="primary"[matDialogClose]="dialogInput.value">Call to action</button>
     </div>
   `,
 })
