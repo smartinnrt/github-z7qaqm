@@ -146,7 +146,7 @@ p.mat-line.secondary-text {
 color: $information-color;
 }
 .mat-icon.warn{
-color: #de342b;
+color: mat-color($warn,500);
 }
 .mat-icon.fav {
   color: $favorite-color;
