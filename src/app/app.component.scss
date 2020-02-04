@@ -1,5 +1,6 @@
 
 @import '../realogy-theme.scss';
+@import '~@angular/material/theming';
 
 mat-sidenav-container.dark-mode {
   background: black;
@@ -162,7 +163,7 @@ color: mat-color($warn,500);
 
 
 .mat-simple-snackbar-action {
-  color:#6296ff!important;
+  color:mat-color($primary, 500)!important;
 }
 
 .mat-tab-label-active{
