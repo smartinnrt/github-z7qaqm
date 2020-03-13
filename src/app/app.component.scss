@@ -119,17 +119,14 @@ mat-chip {
 
 /*BUTTON OVERRIDES*/
 
-.mat-stroked-button {
-  color:mat-color($primary, 500);
-  border-color:mat-color($primary, 500)!important;
-}
-
-button {
-  margin-right:8px;
-}
-
-button:nth-last-child() {
-  margin-right:0px;
+a.mat-stroked-button, button.mat-stroked-button {
+  color: mat-color($primary, 500);
+  border-color:mat-color($primary, 500);
+  margin-right: 8px;
+  
+  &:nth-last-child() {
+    margin-right: 0px;
+  }
 }
 
 .mat-raised-button.mat-primary:hover {
@@ -182,14 +179,71 @@ color: mat-color($warn, 500);
 /*ACTIVE TAB OVERRIDE*/
 
 .mat-tab-label-active{
-  color:#2b2e30;
+  color:mat-color($primary, 500);
+  opacity: 1;
 }
 /*----*/
 
 /*TABLES*/
+.table-wrapper {
+  border: 1px solid #e9e9e9;
+  border-bottom: none;
+  overflow: auto;
+  width: 100%;
+  @include mat-elevation(2);
+
+  @media screen and (max-width: 720px) {
+    max-height: 450px;
+  }
+}
+
 table {
   width: 100%;
   max-width: 90vw;
+}
+
+table.mat-table {
+  border-collapse: separate;
+  width: 100%;
+
+  @media screen and (max-width: 720px) {
+    width: 150%;
+  }
+
+  .mat-table-sticky:first-child {
+    @media screen and (max-width: 720px) {
+      border-right: 1px solid $fog;
+      width: 150px;
+    }
+  }
+
+  thead tr.mat-header-row th.mat-header-cell {
+    z-index: 0 !important;
+
+    @media screen and (max-width: 720px) {
+      z-index: 4 !important;
+    }
+
+    &:first-child {
+      @media screen and (max-width: 720px) {
+        z-index: 5 !important;
+      }
+    }
+  }
+
+  th.mat-header-cell {
+    color: mat-color($primary, 'A200-contrast');
+    font-weight: bold;
+  }
+
+  th.mat-header-cell,
+  td.mat-cell {
+    padding-left: 24px;
+  }
+
+  tr.mat-row:hover {
+    background: $light-gray;
+  }
 }
 
 td.mat-column-star {
@@ -201,16 +255,17 @@ th.mat-column-position, td.mat-column-position {
   padding-left: 8px;
 }
 
+th.mat-header-cell:last-of-type {
+  padding-right: 0px;
+}
+
 .mat-table-sticky:first-child {
   border-right: 1px solid #e0e0e0;
 }
 
+
 tr.mat-row:hover {
   background:#f9f9f9;
-}
-
-th.mat-header-cell {
-  color:#2b2e30;
 }
 
 /*BUTTON TOGGLE OVERRIDES*/
@@ -222,4 +277,9 @@ th.mat-header-cell {
 /*LIST OVERRIDES*/
 .mat-list-item:hover{
   background:#f9f9f9;
+}
+
+  /* CARD OVERRIDES */
+.mat-card-content {
+  line-height: 1.5;
 }
