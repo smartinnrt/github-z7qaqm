@@ -110,6 +110,10 @@ mat-sidenav-container.dark-mode {
   background-color:white!important;
 }
 
+.mat-standard-chip:focus::after {
+  opacity:0;
+}
+
 /*---------*/
 
 
