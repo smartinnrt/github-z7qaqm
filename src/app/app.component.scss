@@ -179,12 +179,18 @@ color: mat-color($warn, 500);
   color:mat-color($primary, 300)!important;
 }
 /*------------*/
-/*ACTIVE TAB OVERRIDE*/
+/*TAB OVERRIDES*/
 
-.mat-tab-label-active{
-  color:mat-color($primary, 500)!important;
-  opacity: 1!important;
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+  color:mat-color($primary, 500);
+  opacity:1;
 }
+
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+  color:mat-color($primary, 500)!important;
+  opacity:1!important;
+}
+
 /*----*/
 
 /*TABLES*/
