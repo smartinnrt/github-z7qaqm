@@ -90,7 +90,7 @@ mat-sidenav-container.dark-mode {
 
 /* CHIP OVERRIDES*/
 
-mat-chip {
+.mat-chip {
   max-width: 200px;
   background-color:white;
   border:1px solid;
@@ -107,7 +107,7 @@ mat-chip {
 
 .mat-chip.mat-standard-chip:active, .mat-chip.mat-standard-chip:hover, .mat-chip.mat-standard-chip:focus {
   border:1px solid #2b2e30;
-  background-color:white;
+  background-color:white!important;
 }
 
 /*---------*/
