@@ -123,8 +123,8 @@ mat-chip {
 
 /*BUTTON OVERRIDES*/
 
-.mat-raised-button.mat-primary {
-  color:white;
+::ng-deep .mat-raised-button.mat-primary {
+  color:white!important;
 }
 
 .mat-button:hover, .mat-stroked-button:hover {
