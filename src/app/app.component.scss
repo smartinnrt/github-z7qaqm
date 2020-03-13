@@ -124,7 +124,7 @@ mat-chip {
 
 a.mat-stroked-button, button.mat-stroked-button {
   color: mat-color($primary, 500);
-  border-color:mat-color($primary, 500);
+  border-color:mat-color($primary, 500)!important;
   margin-right: 8px;
   
   &:nth-last-child() {
@@ -182,8 +182,8 @@ color: mat-color($warn, 500);
 /*ACTIVE TAB OVERRIDE*/
 
 .mat-tab-label-active{
-  color:mat-color($primary, 500);
-  opacity: 1;
+  color:mat-color($primary, 500)!important;
+  opacity: 1!important;
 }
 /*----*/
 
