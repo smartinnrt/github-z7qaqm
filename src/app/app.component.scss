@@ -244,3 +244,8 @@ th.mat-header-cell {
 .mat-list-item:hover{
   background:#f9f9f9;
 }
+
+/* TOOLTIP OVERRIDES */
+::ng-deep .mat-tooltip {
+    background-color: mat-color($primary,'A200-contrast')!important;
+}
